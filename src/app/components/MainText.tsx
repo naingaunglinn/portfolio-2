@@ -1,52 +1,22 @@
 'use client'
+import { HeroText } from "@/type";
 import { motion } from "framer-motion";
 
-const MainText = () => {
-    const sentence = {
-        hidden: { opacity: 1 },
-        visible: {
-            opacity: 1,
-            transition: {
-                delay: 0.5,
-                straggerChildren: 0.08,
-            },
-        },
-    };
-    const letter = {
-        hidden: { opacity: 0, y: 50 },
-        visible: {
-            opacity: 1,
-            y: 0,
-        },
-    };
-    const line1 = "Naing Aung Linn";
-    const line2 = "Programphar";
+type props = {
+    text: HeroText 
+}
+const MainText = ({text}:props) => {   
+
   return (
-    <div>
-        <motion.h3
-            className="text-white load-screen--message"
-            variants={sentence}
-            initial="hidden"
-            animate="visible"
+        <motion.div
+            initial={{ y: -200}}
+            animate={{ y: 0}}
+            transition={{ duration: 1.5, type: 'spring', bounce: 0.5, }}
+            className="uppercase  col-start-2 col-end-6 row-start-3 row-span-2"
         >
-            {line1.split("").map((char, index) => {
-                return (
-                    <motion.span key={`${char}-${index}`} variants={letter}>
-                        {char}
-                    </motion.span>
-                )
-            })}
-            <br />
-            {line2.split("").map((char, index) => {
-                return (
-                    <motion.span key={`${char}-${index}`} variants={letter}>
-                        {char}
-                    </motion.span>
-                )
-            })}
-            
-        </motion.h3>
-    </div>
+            <p className="text-5xl font-bold"><span className="bg-white text-black px-2">{text['name']}</span></p>
+            <p className="text-xl font-bold my-5"><span className="bg-white text-black px-2">{text['bio']}</span></p>
+        </motion.div>
   );
 };
 
