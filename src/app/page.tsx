@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
 				<ul>
 					<li>+959440410393</li>
 					<li>naingaunglinn369@gmail.com</li>
-					<li><Link href="https://github.com/naingaunglinn">Naing Aung Linn | Github</Link></li>
+					<li><FaGithub className="inline mr-2" /><Link href="https://github.com/naingaunglinn" className="text-blue-600">Naing Aung Linn | Github</Link></li>
 				</ul>
 			</div>
 		</main>
