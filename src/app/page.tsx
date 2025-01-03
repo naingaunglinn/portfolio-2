@@ -14,14 +14,14 @@ export default function Home() {
 					<div><Link href='#profile' className="hover:text-[#A91D3A]">Profile</Link></div>
 				</div>
 			</header>
-			<main className="flex flex-col gap-8 row-start-2 pt-40 sm:items-start">
+			<main className="flex flex-col row-start-2 pt-40 sm:items-start">
 				<Main />
-				<div className="max-w-[500px] pt-20">
+				<div className="max-w-[500px] pt-40">
 					<h2 className="text-xl font-bold text-[#A91D3A]">Who Am I!</h2>
 					<p>
 						I am <span className="text-[#A91D3A]">Naing Aung Linn</span>, a Senior PHP Developer with over six years of experience in full-stack web development. 
 					   	I specialize in <span className="bg-white text-black">PHP, JavaScript, Laravel, and React</span>, with a strong focus on creating efficient and scalable web applications. 
-					   	I am passionate about learning new technologies and continuously improving my skills to deliver high-quality solutions....
+					   	I am passionate about learning new technologies and continuously improving my skills to <span className="bg-white text-black">deliver high-quality solutions</span>....
 					</p>
 				</div>
 			</main>
