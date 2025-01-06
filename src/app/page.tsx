@@ -1,5 +1,4 @@
 'use client'
-import Link from "next/link";
 import Main from "./components/Main";
 import Image from "next/image";
 import Header from "./components/Header";
