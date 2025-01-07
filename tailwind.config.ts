@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        reddish: '#A91D3A',
+        bluish: '#0077B5',
       },
       fontFamily: {
         jost: ['var(--font--jost)'],
